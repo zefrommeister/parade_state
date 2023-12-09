@@ -8,7 +8,7 @@ This is a Flutter application for managing parade state information. The app is 
 - firebase_core: Firebase Core library for initializing Firebase services.
 - flutter/material.dart: Flutter's Material Design components.
 
-## Getting Started
+## Additional Information
 
 To view the parade state, please go to here: https://docs.google.com/spreadsheets/d/13gk6BjULm1f-3bBKSvi2x7mceUGfdyIOl1FjjO1Rvsg/edit?usp=sharing
 
