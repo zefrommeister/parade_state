@@ -17,15 +17,15 @@ class ListFile extends StatefulWidget {
 
 class _ListFileState extends State<ListFile> {
 
-  List<String> unit = ["ECHQ", "Supply Section", "Camp Ops Sembawang", "Camp Ops Nee Soon", "Camp Ops Seletar", "Camp Ops Dieppe",
-    "Central Pool", "Fleet Support Section", "Satellite Pool Seletar",
-    "Satellite Pool Sembawang", "Satellite Pool Dieppe", "35SCE", "ARMCEG", "ADF", "CBRE"];
+  List<String> unit = ['Alpha', 'Bravo', 'Charlie', 'Delta', 'Echo', 'Foxtrot',
+    'Golf', 'Hotel', 'India', 'Juliett', 'Kilo', 'Lima', 'Mike', 'November', 'Oscar', 'Papa', 'Quebec', 'Romeo', 'Sierra', 'Tango'];
 
   List<IconData> icons = [Icons.person, Icons.attach_money_outlined, Icons.computer_sharp, Icons.computer, Icons.computer_outlined, Icons.computer_rounded,
-  Icons.all_inbox, Icons.construction_outlined, Icons.work_outlined, Icons.work_sharp, Icons.work_rounded, Icons.engineering, Icons.note, Icons.person_pin, Icons.masks];
+  Icons.all_inbox, Icons.construction_outlined, Icons.construction, Icons.work_outlined, Icons.work_sharp, Icons.work_rounded, Icons.engineering, Icons.note, Icons.masks, Icons.person_pin,
+    Icons.masks, Icons.masks, Icons.masks, Icons.masks];
 
-  List<String> password = ["212355", "598953", "465728", "678988", "445768", "184434", "222465"
-  "867645", "565542", "346978", "114785", "697859", "467849"];
+  List<String> password = ["212355", "598953", "465728", "678988", "445768", "184434", "222465", "167433", "811457",
+  "867645", "565542", "346978", "114785", "697859", "232574", "945478", "467849", "467849", "467849", "467849"];
 
   @override
   Widget build(BuildContext context) {
@@ -43,6 +43,7 @@ class _ListFileState extends State<ListFile> {
           itemCount: unit.length,
           itemBuilder: (context, index) {
             return Card(
+              color: Colors.grey[100],
               child: ListTile(
                 onTap: () {
                   Navigator.pushReplacementNamed(context, '/pass', arguments: {
@@ -51,9 +52,6 @@ class _ListFileState extends State<ListFile> {
                     'selectedUnit' : index,
                   });
                   isSelectedUnit = index;
-                  print(index);
-                  print(unit[index]);
-                  print(password[index]);
                 },
                 leading: Icon(icons[index]),
                 title: Text(unit[index]),

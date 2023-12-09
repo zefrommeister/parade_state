@@ -1,10 +1,6 @@
 import 'package:parade_state/main.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
-import 'package:parade_state/pages/home.dart';
-import 'package:http/http.dart';
-import 'dart:convert';
-import 'package:intl/intl.dart';
 import 'package:parade_state/pages/listFile.dart';
 
 class Loading extends StatefulWidget {
@@ -18,25 +14,6 @@ class Loading extends StatefulWidget {
 class _LoadingState extends State<Loading> {
 
   String hString = 'green';
-
-  /*void getTime() async {
-    Response response = await get(Uri.parse('https://worldtimeapi.org/api/timezone/Asia/Singapore'));
-    Map data = jsonDecode(response.body);
-
-    String datetime = data['datetime'];
-    DateTime now = DateTime.parse(datetime.substring(0,26));
-    final DateFormat formatter = DateFormat('dd/MM/y');
-    final String formatted = formatter.format(now);
-
-    //Navigator.pushReplacementNamed(context, '/home', arguments: {
-    //'DateTime' : formatted,
-    //});
-
-    print(formatted);
-  }*/
-
-
-
 
   @override
   void initState() {

@@ -71,9 +71,8 @@ class UserSheetsApi {
 
   static Future init() async {
     try {
-      List<String> psUnit = ['ECHQ', 'SUPPLY SECT', 'COSEMB', 'CONS', 'COSEL', 'CODB',
-        'CP', 'FLEET', 'SPSEL', 'SPSEMB', 'SPDB', '35SCE', 'ARMCEG', 'ADF', 'CBRE'];
-
+      List<String> psUnit = ['Alpha', 'Bravo', 'Charlie', 'Delta', 'Echo', 'Foxtrot',
+        'Golf', 'Hotel', 'India', 'Juliett', 'Kilo', 'Lima', 'Mike', 'November', 'Oscar', 'Papa', 'Quebec', 'Romeo', 'Sierra', 'Tango'];
 
       final spreadsheet = await _gSheets.spreadsheet(_spreadSheetID);
       _userSheet = await _getWorkSheet(spreadsheet, title: psUnit[isSelectedUnit]);
@@ -106,14 +105,12 @@ class UserSheetsApi {
 
   }
 
-  static Future delete() async
+  static buffer(Map<String, dynamic> mapRow)
   {
     if (_userSheet == null) return false;
 
-    for (var v = 0; v < globalGSIndex; v++)
-    return _userSheet!.deleteRow(v);
+    _userSheet!.values.map.appendRow(mapRow);
   }
-
 
 
 }

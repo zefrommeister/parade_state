@@ -1,8 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:parade_state/main.dart';
 
-List<String> fbUnit = ['echqpstate', 'sspstate', 'cosembpstate', 'conspstate', 'coslpstate', 'codbpstate',
-  'cppstate', 'fleetpstate', 'spslpstate', 'spsembpstate', 'spdbpstate', '35scepstate', 'armcegpstate', 'adfpstate', 'cbrepstate'];
+List<String> fbUnit = ['alphapstate', 'bravopstate', 'charliepstate', 'deltapstate', 'echopstate', 'foxtrotpstate',
+  'golfpstate', 'hotelpstate', 'indiapstate', 'juliettpstate', 'kilopstate', 'limapstate', 'mikepstate', 'novemberpstate', 'oscarpstate', 'papapstate', 'quebecpstate', 'romeopstate', 'sierrapstate', 'tangopstate'];
 
 
 class DatabaseManager {
@@ -13,7 +13,7 @@ class DatabaseManager {
     List itemsList = [];
 
     try {
-      await dbList.get().then((querySnapshot) {
+      await dbList.orderBy('isRegular', descending: true).get().then((querySnapshot) {
         querySnapshot.docs.forEach((element) {
           itemsList.add(element.data());
         });
@@ -26,4 +26,5 @@ class DatabaseManager {
     }
 
   }
+
 }

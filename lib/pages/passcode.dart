@@ -33,11 +33,8 @@ class _PassState extends State<Pass> {
 
     Navigator.pushReplacementNamed(context, '/home', arguments: {
       'DateTime' : formatted,
-      'Unit' : unit,
       'selectedUnit' : isSelectedUnit,
     });
-
-    print(formatted);
   }
 
 
@@ -70,6 +67,7 @@ class _PassState extends State<Pass> {
               PinCodeTextField(
                   appContext: context,
                   length: 6,
+                  keyboardType: TextInputType.number,
                   onChanged: (value) {
                   },
                 pinTheme: PinTheme(
@@ -85,12 +83,9 @@ class _PassState extends State<Pass> {
                     if (value == pw){
                       setState(() {
                         getTime();
-                        print(isSelectedUnit);
                       });
-                     print('Good');
                     }
                     else {
-                      print('Bad');
                       final snackBar = SnackBar(content: Text("Passcode incorrect! Please call for help"));
                       ScaffoldMessenger.of(context).showSnackBar(snackBar);
                     }
