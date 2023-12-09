@@ -1,10 +1,16 @@
 # parade_state
 
-A new Flutter application.
+This is a Flutter application for managing parade state information. The app is designed to interact with Firestore and Google Sheets to store and retrieve data. It allows users to view, edit, and delete information about individuals' parade state. 
+
+## Dependencies
+- cloud_firestore: Firestore plugin for Flutter to interact with Firebase Firestore.
+- gsheets: A library for interacting with Google Sheets.
+- firebase_core: Firebase Core library for initializing Firebase services.
+- flutter/material.dart: Flutter's Material Design components.
 
 ## Getting Started
 
-This project is a attendance tracking mobile app
+To view the parade state, please go to here: https://docs.google.com/spreadsheets/d/13gk6BjULm1f-3bBKSvi2x7mceUGfdyIOl1FjjO1Rvsg/edit?usp=sharing
 
 A few resources to get you started if this is your first Flutter project:
 
