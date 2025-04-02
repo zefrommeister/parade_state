@@ -21,5 +21,8 @@ For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
-https://github.com/user-attachments/assets/e5af6b2a-cce5-4428-b73e-cb6c7e4d4760
+## Adding of new user
+![ezgif com-optimize](https://github.com/user-attachments/assets/8235fc6d-c448-4e49-bda2-c6c97eb18834)
 
+## Sending of parade state/attendance
+![ezgif com-optimize (1)](https://github.com/user-attachments/assets/e7305974-d554-4c2d-a1f2-257519b56ed6)
