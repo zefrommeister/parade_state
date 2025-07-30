@@ -1,6 +1,6 @@
 # parade_state
 
-This is a Flutter application for managing parade state information. The app is designed to interact with Firestore and Google Sheets to store and retrieve data. It allows users to view, edit, and delete information about individuals' parade state. 
+This is a Flutter application for managing parade state information during my army days. The app is designed to interact with Firestore and Google Sheets to store and retrieve data. It allows users to view, edit, and delete information about individuals' parade state. I won the Base Sergeant Major Coin in 2022 for this development.
 
 ## Dependencies
 - cloud_firestore: Firestore plugin for Flutter to interact with Firebase Firestore.
